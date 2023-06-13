@@ -70,7 +70,7 @@
 
                 <br><br><br /><br />
                 <div class="mx-auto mt-5">
-                    <form method="POST" action="{{ url('/login') }}">
+                    <form method="POST" action="{{ route('signin') }}">
                         @csrf
                         <div class="row mb-3">
                             <div class="col-md-7 mx-auto col-sm-12">
@@ -94,7 +94,7 @@
 
                         <div class="row mb-3">
                             <div class="col-md-9 mx-auto">
-                                <p>New here? <a class="text-dark" href="{{ route('register') }}"">Click me</a></p>
+                                <p>New here? <a class="text-dark" href="{{ route('reg') }}">Click me</a></p>
                             </div>
                         </div>
                     </form>

@@ -10,7 +10,12 @@ use Illuminate\View\View;
 
 class ToyController extends Controller
 {
-    public function index(): View
+    public function homepage(): View
+    {
+        return view("index");
+    }
+
+    public function landingpage(): View
     {
         $toys = Toy::all();
         return view("toys.storage")->with("toys", $toys);
@@ -25,7 +30,7 @@ class ToyController extends Controller
     {
         $input = $request->all();
         Toy::create($input);
-        return redirect('toy')->with('flash_message', 'Toy Added!');
+        return redirect()->route('main')->with('flash_message', 'Toy Added!');
     }
 
     public function show(string $id): View
@@ -45,13 +50,13 @@ class ToyController extends Controller
         $toy = Toy::find($id);
         $input = $request->all();
         $toy->update($input);
-        return redirect('toy')->with('flash_message', 'Toy Updated!');
+        return redirect()->route('main')->with('flash_message', 'Toy Updated!');
     }
 
 
     public function destroy(string $id): RedirectResponse
     {
         Toy::destroy($id);
-        return redirect('toy')->with('flash_message', 'Toy deleted!');
+        return redirect()->route('main')->with('flash_message', 'Toy deleted!');
     }
 }

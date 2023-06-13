@@ -65,7 +65,7 @@
                 <br><br>
                 <br><br>
                 <div class="mx-auto mt-5">
-                    <form method="POST" action="{{ url('/register') }}">
+                    <form method="POST" action="{{ route('signup') }}">
                         @csrf
                         <div class="row mb-3">
                             <div class="col-md-7 mx-auto col-sm-12">

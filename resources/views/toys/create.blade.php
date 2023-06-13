@@ -5,7 +5,7 @@
   <div class="card-header">Toys Page</div>
   <div class="card-body">
       
-      <form action="{{ url('toy') }}" method="post">
+      <form action="{{ route('createtoy') }}" method="post">
         {!! csrf_field() !!}
         <label>Name</label></br>
         <input type="text" name="name" id="name" class="form-control" required></br>

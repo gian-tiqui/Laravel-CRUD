@@ -28,6 +28,6 @@ class RegisterController extends Controller
         ]);
 
         // Redirect the user to the desired page after registration
-        return redirect('/toy')->with('success', 'Registration successful!');
+        return redirect()->route('main')->with('success', 'Registration successful!');
     }
 }

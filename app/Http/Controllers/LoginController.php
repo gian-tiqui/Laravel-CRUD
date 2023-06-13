@@ -17,7 +17,7 @@ class LoginController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
-            return redirect('/toy');
+            return redirect()->route('main');
         } else {
             return redirect()->back()->with('error', 'Wrong username or password');
         }

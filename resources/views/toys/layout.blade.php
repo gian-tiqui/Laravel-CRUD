@@ -50,7 +50,7 @@
             </div>
             <div class="float-end d-flex align-items-center">
                 <input type="text" class="form-control me-2 rounded" style="height: 40px;" placeholder="Search">
-                <a class="btn btn-danger rounded ms-3" href="{{ route('logout') }}">Logout</a>
+                <a class="btn btn-danger rounded ms-3" href="{{ route('signout') }}">Logout</a>
             </div>
         </div>
     </header>

@@ -5,7 +5,7 @@
   <div class="card-header">Edit Toy Info</div>
   <div class="card-body">
 
-    <form action="{{ url('toy/' .$toys->id) }}" method="post">
+    <form action="{{ route('updates', $toys->id) }}" method="post">
       {!! csrf_field() !!}
       @method("PATCH")
       <input type="hidden" name="id" id="id" value="{{$toys->id}}" id="id" />

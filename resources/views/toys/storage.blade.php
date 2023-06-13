@@ -9,7 +9,7 @@
                         <h2>Toy Information</h2>
                     </div>
                     <div class="card-body">
-                        <a href="{{ url('/toy/create') }}" class="btn btn-primary btn-sm" title="Add New Toy">
+                        <a href="{{ route('addtoy') }}" class="btn btn-primary btn-sm" title="Add New Toy">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New Toy
                         </a>
                         <br/>
@@ -36,10 +36,10 @@
                                         <td>{{ $item->brand }}</td>
  
                                         <td>
-                                            <a href="{{ url('/toy/' . $item->id) }}" title="View Toy"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
-                                            <a href="{{ url('/toy/' . $item->id . '/edit') }}" title="Edit Toy"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
+                                            <a href="{{ route('showtoy', $item->id) }}" title="View Toy"><button class="btn btn-info btn-sm"><i class="fa fa-eye" aria-hidden="true"></i> View</button></a>
+                                            <a href="{{ route('edits', $item->id) }}" title="Edit Toy"><button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</button></a>
  
-                                            <form method="POST" action="{{ url('/toy' . '/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ route('delete', $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
                                                 <button type="submit" class="btn btn-danger btn-sm" title="Delete Toy" onclick="return confirm(&quot;Confirm delete?&quot;)"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</button>

@@ -10,7 +10,7 @@
     <style>
         .bg-image {
             height: 350px;
-            background-image: url('/images/mg.jpg');
+            background-image: url('./images/mg.jpg');
             background-repeat: no-repeat;
         }
 
@@ -61,13 +61,13 @@
     <br>
     <br>
 
-    <div class="bg-secondary text-center py-1">
-        <a href="#" class="text-light mx-3">Home</a>
-        <a href="#" class="text-light mx-3">About us</a>
-        <a href="#" class="text-light mx-3">Toys</a>
-        <a href="#" class="text-light mx-3">Promos</a>
-        <a href="#" class="text-light mx-3">Sale</a>
-        <a href="#" class="text-light mx-3">Contact us</a>
+    <div class="bg-white text-center py-1">
+        <a href="#" class="text-dark mx-3">Home</a>
+        <a href="#" class="text-dark mx-3">About us</a>
+        <a href="#" class="text-dark mx-3">Toys</a>
+        <a href="#" class="text-dark mx-3">Promos</a>
+        <a href="#" class="text-dark mx-3">Sale</a>
+        <a href="#" class="text-dark mx-3">Contact us</a>
     </div>
 
     <br>
@@ -81,7 +81,7 @@
             <div class="col bg-image mt-1">
 
             </div>
-            <div class="col card shadow-lg px-5 py-3" id="login">
+            <div class="col card shadow-lg px-5 py-3 ms-2" id="login">
                 <h4 class="text-start text-light">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </h4>
@@ -89,12 +89,10 @@
         </div>
     </div>
 
-    
     <br>
     <br>
     <br>
     <br>
-   
 
     <footer class="bg-dark text-center text-lg-start mt-5 pt-4">
         <div class="container text-light">
@@ -107,6 +105,7 @@
                 </div>
                 <div class="text-center p-2 bg-dark text-light">© 2023 Toys Inc.</div>
     </footer>
+
 </body>
 
 </html>
