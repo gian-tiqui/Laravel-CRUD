@@ -18,4 +18,4 @@ Route::get('/{item}/show', [ToyController::class, 'show'])->name('showtoy');
 Route::get('logout', [LoginController::class, 'logout'])->name('signout');
 Route::get('/{item}/edit', [ToyController::class, 'edit'])->name('edits');
 Route::delete('/{item}', [ToyController::class, 'destroy'])->name('delete');
-Route::patch('/{item}', [ToyController::class, 'update'])->name('updates');
+Route::patch('/{item}', [ToyController::class, 'update'])->name('updates');//test
